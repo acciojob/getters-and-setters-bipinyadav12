@@ -10,6 +10,12 @@ class Person {
 	set age(value){
 		this._age=value
 	}
+	get name(){
+		return this._name
+	}
+	set name(value){
+		this._name=value
+	}
 }
 
 class Student extends Person {
@@ -28,7 +34,8 @@ class Teacher extends Person {
 	teach(){
 		console.log(`${this.name} is teaching`)
 	}
-							 }const person = new Person("John", 25);
+}
+const person = new Person("John", 25);
 console.log(person.name); // Output: John
 
 person.age = 30;
