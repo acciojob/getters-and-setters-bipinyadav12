@@ -4,6 +4,12 @@ class Person {
 		this.name=name
 		this.age=age
 	}
+	get age (){
+		return this._age
+	}
+	set age(value){
+		this._age=value
+	}
 }
 
 class Student extends Person {
